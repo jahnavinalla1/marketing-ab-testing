@@ -4,7 +4,7 @@
 
 Experiment design · confidence intervals · statistical testing
 
-[Interactive dashboard](https://jahnavinalla1.github.io/analytics-projects/03-marketing-experiment/) · [Decision memo](results/report.md) · [SQL](analysis.sql) · [Python](analyze.py)
+[Dashboard file](index.html) · [Decision memo](results/report.md) · [SQL](analysis.sql) · [Python](analyze.py)
 
 ## Business problem
 
@@ -27,7 +27,7 @@ python3 analyze.py
 python3 -m unittest discover -s tests -v
 ```
 
-Open `index.html` in your browser to explore the dashboard. Its data is embedded, so no server is needed. The [hosted demo](https://jahnavinalla1.github.io/analytics-projects/03-marketing-experiment/) is also linked from the portfolio. `generate.py` intentionally overwrites `data.csv` with the same simulated sample; `analyze.py` only reads it and rebuilds outputs.
+Open `index.html` in your browser to explore the dashboard. Its data is embedded, so no server is needed. `generate.py` intentionally overwrites `data.csv` with the same simulated sample; `analyze.py` only reads it and rebuilds outputs.
 
 ## Data and provenance
 
