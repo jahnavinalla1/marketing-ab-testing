@@ -1,0 +1,2 @@
+lift_pp,ci_low_pp,ci_high_pp,two_sided_p,srm_p,normal_approximation_valid,decision
+2.804,1.106,4.502,0.001228,0.698535,True,Evidence of improvement

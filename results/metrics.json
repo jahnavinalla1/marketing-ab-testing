@@ -1,0 +1,99 @@
+{
+  "title": "Marketing landing-page A/B experiment",
+  "question": "Does variant B improve conversion enough to justify a rollout?",
+  "kpis": {
+    "Participants": "6,000",
+    "Absolute lift": "+2.80 pp",
+    "95% lift interval": "[1.11, 4.50] pp",
+    "Decision": "Evidence of improvement"
+  },
+  "tables": {
+    "variants": [
+      {
+        "variant": "A",
+        "users": 2985,
+        "conversions": 345,
+        "conversion_pct": 11.558,
+        "revenue": 26645.0,
+        "revenue_per_user": 8.9263,
+        "acquisition_cost": 6567.0
+      },
+      {
+        "variant": "B",
+        "users": 3015,
+        "conversions": 433,
+        "conversion_pct": 14.362,
+        "revenue": 33487.0,
+        "revenue_per_user": 11.1068,
+        "acquisition_cost": 6633.0
+      }
+    ],
+    "device_diagnostics": [
+      {
+        "device": "Desktop",
+        "variant": "A",
+        "users": 1494,
+        "conversions": 187,
+        "conversion_pct": 12.517
+      },
+      {
+        "device": "Desktop",
+        "variant": "B",
+        "users": 1501,
+        "conversions": 241,
+        "conversion_pct": 16.056
+      },
+      {
+        "device": "Mobile",
+        "variant": "A",
+        "users": 1491,
+        "conversions": 158,
+        "conversion_pct": 10.597
+      },
+      {
+        "device": "Mobile",
+        "variant": "B",
+        "users": 1514,
+        "conversions": 192,
+        "conversion_pct": 12.682
+      }
+    ],
+    "inference": [
+      {
+        "lift_pp": 2.804,
+        "ci_low_pp": 1.106,
+        "ci_high_pp": 4.502,
+        "two_sided_p": 0.001228,
+        "srm_p": 0.698535,
+        "normal_approximation_valid": true,
+        "decision": "Evidence of improvement"
+      }
+    ]
+  },
+  "findings": [
+    "A converts at 11.56%; B converts at 14.36%.",
+    "Two-sided pooled z-test p=0.001228; 50/50 sample-ratio mismatch p=0.698535.",
+    "Revenue per user is a descriptive secondary metric; device cuts are exploratory and are not separately tested."
+  ],
+  "actions": [
+    "Current statistical assessment: evidence of improvement. Decide practical value against an agreed minimum effect before rollout.",
+    "For a real trial, pre-register sample size, stopping rule, primary conversion event and refund/latency guardrails.",
+    "Do not extend the same experiment until significance appears; plan a separately powered follow-up if needed."
+  ],
+  "limitations": "Simulated independent user-level assignment, one observation per user and one fixed analysis. Uses a two-sided pooled z-test and unpooled normal 95% confidence interval; count adequacy is checked. No commercial results are claimed. Costs are illustrative and gross revenue is not profit.",
+  "chart": {
+    "title": "Conversion rate by variant",
+    "note": "Primary metric: converting users / all assigned users (intention to treat).",
+    "unit": "%",
+    "rows": [
+      {
+        "label": "Variant A",
+        "value": 11.558
+      },
+      {
+        "label": "Variant B",
+        "value": 14.362
+      }
+    ]
+  }
+}
